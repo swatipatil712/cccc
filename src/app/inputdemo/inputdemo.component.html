@@ -1,0 +1,24 @@
+<p>
+  inputdemo works!
+</p>
+
+<app-child-inputdemo [all]= " getCountOfTotalEmployee()"
+                     [female] = "getCountOfMaleEmployee()"
+                     [male] = "getCountOfFemaleEmployee()"></app-child-inputdemo>
+<table>
+  <tr>
+    <th colspan="4"> Employee Details</th>
+  </tr>
+  <tr>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>GENDER</th>
+    <th>SALARY</th>
+  </tr>
+  <tr *ngFor= " let e of employee">
+  <td>{{e.id}}</td>
+  <td>{{e.name}}</td>
+  <td>{{e.gender}}</td>
+  <td>{{e.salary}}</td>
+</tr>
+</table>

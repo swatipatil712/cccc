@@ -1,0 +1,22 @@
+<p>
+  customer works!
+</p>
+<table>
+    <tr>
+      <th colspan = "4"> Customer Details</th>
+    </tr>
+    <tr>
+      <th>ID</th>
+      <th>NAME</th>
+      <th>GENDER</th>
+      <th>SALARY</th>
+     </tr>
+     <tr *ngFor = "let emp of employee">
+       <td>{{emp.id}}</td>
+       <td>{{emp.name}}</td>
+       <td>{{emp.gender}}</td>
+       <td>{{emp.salary}}</td>
+  
+     </tr>
+  </table>
+  

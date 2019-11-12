@@ -1,0 +1,24 @@
+<p>
+  employee works!
+</p>
+<table>
+  <tr>
+    <th colspan = "5"> Employee Details</th>
+  </tr>
+  <tr>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>GENDER</th>
+    <th>SALARY</th>
+    <th>DOJ</th>
+   </tr>
+   <tr *ngFor = "let emp of employee">
+     <td>{{emp.id}}</td>
+     <td>{{emp.name | uppercase}}</td>
+     <td>{{emp.gender }}</td>
+     <td>{{emp.salary | currency : 'INR'}}</td>
+     <td>{{emp.doj | date : 'fullDate' | uppercase}}</td>
+
+   </tr>
+</table>
+<app-customer></app-customer>

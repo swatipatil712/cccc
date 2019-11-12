@@ -1,0 +1,41 @@
+<!------<p>
+  employee1 works!
+</p>
+<table>
+  <tr>
+    <th colspan = "4"> Employee Details</th>
+  </tr>
+  <tr>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>GENDER</th>
+    <th>SALARY</th>
+   </tr>
+   <tr *ngFor = "let emp of employee1">
+     <td>{{emp.id}}</td>
+     <td>{{emp.name | emptitle : emp.gender}}</td>
+     <td>{{emp.gender}}</td>
+     <td>{{emp.salary}}</td>
+   </tr>
+  </table>---->
+<br>
+<h2> Countries With Capitals</h2>
+<table>
+  <tr>
+    <th> Name of Countries</th>
+    <th> Name of Capitals</th>
+    <th>Reagion</th>
+    <th>Currency </th>
+    <th>Population</th>
+    <th>Flag</th>
+    
+  </tr>
+  <tr *ngFor = "let c of countries" >
+      <td>{{c.name}}</td>
+      <td>{{c.capital}}</td>
+      <td>{{c.region}}</td>
+      <td>{{c.currency}}</td>
+      <td>{{c.population}}</td>
+      <td><img [src]="c.flag" height="50" width="50"></td>
+  </tr>
+</table>
